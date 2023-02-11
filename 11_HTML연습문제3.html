@@ -9,8 +9,10 @@
 <body>
     <form>
         <h1>회원가입</h1>
+
         <fieldset>
             <legend>필수 입력 사항</legend>
+
             <table>
                 <tr>
                     <th>ID</th>
@@ -37,10 +39,13 @@
                     <th>Email</th>
                     <td>
                         <input type="email" name="email" id="email" >
+                    </td>
+                    <td>   
                         <select>
-                            <option value="self">직접입력</option>
-                            <option value="naver">@naver.com</option>
-                            <option value="daum">@hanmail.net</option>
+                            <option value="naver">naver.com</option>
+                            <option value="daum">hanmail.net</option>
+                            <option value="google">gmail.com</option>
+                            <option selected>직접입력</option>
                         </select>
                     </td>
                 </tr>
@@ -50,8 +55,7 @@
         <fieldset>
             <legend>추가 정보</legend>
 
-            <label>프로필 사진</label>
-            <input type="file"><br><br>
+            프로필 사진 <input type="file"><br><br>
 
             성별 :
             <label for="F">여자</label>
@@ -60,7 +64,7 @@
             <input type="radio" name="gender" id="M" value="M"> 
             <br><br>
 
-            생년월일 : <input type="date"> <br><br>
+            생년월일 : <input type="date" name="dateIn"> <br><br>
 
             취미 <br>
             <input type="checkbox" name="hobby" id="baseball" value="baseball">
@@ -83,16 +87,21 @@
             <input type="text"><br><br>
 
             자기소개 <br>
-            <textarea rows="10" cols="70" style="resize: none;">
-            </textarea>
+            <textarea rows="10" cols="70" style="resize: none;"> </textarea>
+
+            <br>
+
         </fieldset>
+
         <br>
+
         <button type="submit">회원가입</button>
         <button type="reset">다시입력</button>
-        <button type="menu">이전으로</button>
+        <button type="button">이전으로</button>
+
+        <br><br>
 
     </form>
 
-    
 </body>
 </html>

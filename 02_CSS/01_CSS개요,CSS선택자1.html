@@ -1,70 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>01_CSS 개요-CSS 선택자 1</title>
     <style>
-        /* style 태그 : css 코드만 작성할 수 있는 영역을 제공하는 태그 */
-        /* css 주석 */
+      /* style 태그 : css 코드만 작성할 수 있는 영역을 제공하는 태그 */
+      /* css 주석 */
 
-        /* 태그 선택자(태그명) */
-        div{
-            border: 3px solid red;
-        }
-        
-        strong{
-            background-color:rgb(182, 201, 91);
-        }
+      /* 태그 선택자(태그명) */
+      div {
+        border: 3px solid red;
+      }
 
-        span{
-            background-color: darkorange;
-        }
+      strong {
+        background-color: rgb(182, 201, 91);
+      }
 
-        /* 아이디 선택자(#) */
-        #li-1{ background-color:cornflowerblue;}
-        #li-2{ background-color:burlywood;}
-        #li-3{ background-color:chartreuse;}
-        #li-4{ background-color:darkorange;}
-        #li-5{ background-color:hotpink;}
+      span {
+        background-color: darkorange;
+      }
 
-        /* 콤마(,)를 이용한 여러 선택자 동시 작성 */
-        #li-1, #li-2, #li-3, #li-4, #li-5{
-            color: white;
-        }
+      /* 아이디 선택자(#) */
+      #li-1 {
+        background-color: cornflowerblue;
+      }
+      #li-2 {
+        background-color: burlywood;
+      }
+      #li-3 {
+        background-color: chartreuse;
+      }
+      #li-4 {
+        background-color: darkorange;
+      }
+      #li-5 {
+        background-color: hotpink;
+      }
 
-        /* 클래스 선택자(.) */
-        .test-1{ color: brown;}
-        .test-2{ color: white; background-color: black;}
+      /* 콤마(,)를 이용한 여러 선택자 동시 작성 */
+      #li-1,
+      #li-2,
+      #li-3,
+      #li-4,
+      #li-5 {
+        color: white;
+      }
 
-        .aaa{
-            font-weight: bold;
-        }
+      /* 클래스 선택자(.) */
+      .test-1 {
+        color: brown;
+      }
+      .test-2 {
+        color: white;
+        background-color: black;
+      }
 
-        /* 모든 요소 선택자(*) */
-        @font-face {  /* 웹 폰트 추가 */
-            font-family: 'CookieRun-Regular';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
+      .aaa {
+        font-weight: bold;
+      }
 
-        *{
-            /* 글꼴 크기 */
-            font-size: 10px;
-            /* 글꼴 모양 */
-            font-family:'CookieRun-Regular';
-        }
+      /*모든 요소 선택자(*) */
+      @font-face {
+        /* 웹 폰트 추가 */
+        font-family: "CookieRun-Regular";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
 
-        *{
-            margin: 0;
-            padding: 0;
-        }
+      * {
+        /* 글꼴 크기
+          font-size: 10px;
+          /* 글꼴 모양 */
+        font-family: "CookieRun-Regular";
+      }
 
+      * {
+        margin: 0;
+        padding: 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- html 주석 -->
     <h1>CSS(Cascading Style Sheets)</h1>
     <pre>
@@ -74,9 +94,9 @@
 W3C(웹 표준 지정 기관)에서 css를 표준으로 지정함.
     </pre>
 
-    <hr>
+    <hr />
 
-    <h1 style="font-variant: small-caps;">CSS Selector(선택자)</h1>
+    <h1 style="font-variant: small-caps">CSS Selector(선택자)</h1>
     <pre>
 Selector란?
 현재 HTML 문서 내에서 특정한 요소를 선택하는 문자 또는 문자열
@@ -86,7 +106,7 @@ Selector란?
 # : id
     </pre>
 
-    <hr>
+    <hr />
 
     <h3>태그 선택자</h3>
     <pre>
@@ -98,22 +118,22 @@ Selector란?
     </pre>
 
     <div>
-        <strong>strong 태그에 작성된 내용입니다.</strong>
-        <br>
+      <strong>strong 태그에 작성된 내용입니다.</strong>
+      <br />
 
-        <span>span 태그에 작성된 내용입니다.</span>
+      <span>span 태그에 작성된 내용입니다.</span>
 
-        <ul>
-            <li>
-                <strong>strong 태그에 작성된 내용입니다.</strong>
-            </li>
-            <li>
-                <span>span 태그에 작성된 내용입니다.</span>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <strong>strong 태그에 작성된 내용입니다.</strong>
+        </li>
+        <li>
+          <span>span 태그에 작성된 내용입니다.</span>
+        </li>
+      </ul>
     </div>
 
-    <hr>
+    <hr />
 
     <h3>id 선택자(#id속성값)</h3>
     <pre>
@@ -129,21 +149,21 @@ HTML 문서 내에서 id 속성값이 일치하는 요소를 선택하는 선택
 '#' == id
     </pre>
 
-<!-- 
+    <!-- 
     Java : helloWorld - 카멜 표기법!
     DB : HELLO_WORLD - 대문자, 띄어쓰기 _로 표시(MEMBER_NO)
     HTML :  하이픈 표기법(li-1, class-1) / 언더바 표기법(li_1, class_1)
 -->
 
     <ol>
-        <li id="li-1">id 선택자 테스트 1</li>
-        <li id="li-2">id 선택자 테스트 2</li>
-        <li id="li-3">id 선택자 테스트 3</li>
-        <li id="li-4">id 선택자 테스트 4</li>
-        <li id="li-5">id 선택자 테스트 5</li>
+      <li id="li-1">id 선택자 테스트 1</li>
+      <li id="li-2">id 선택자 테스트 2</li>
+      <li id="li-3">id 선택자 테스트 3</li>
+      <li id="li-4">id 선택자 테스트 4</li>
+      <li id="li-5">id 선택자 테스트 5</li>
     </ol>
 
-    <hr>
+    <hr />
 
     <h3>class 선택자(.)</h3>
     <pre>
@@ -158,38 +178,31 @@ HTML 문서 내에서 같은 class 속성 값을 가지는 태그를 모두 선�
     </pre>
 
     <ul>
-        <li class="test-1">클래스 선택자 테스트1</li>
-        <li class="test-2">클래스 선택자 테스트2</li>
-        <li class="test-1">클래스 선택자 테스트3</li>
-        <li class="test-2">클래스 선택자 테스트4</li>
-        <li class="test-1">클래스 선택자 테스트5</li>
+      <li class="test-1">클래스 선택자 테스트1</li>
+      <li class="test-2">클래스 선택자 테스트2</li>
+      <li class="test-1">클래스 선택자 테스트3</li>
+      <li class="test-2">클래스 선택자 테스트4</li>
+      <li class="test-1">클래스 선택자 테스트5</li>
 
-        <li class="aaa">클래스 선택자 테스트6</li>
+      <li class="aaa">클래스 선택자 테스트6</li>
 
-        <!-- 여러 클래스 적용 가능 -->
-        <li class="aaa test-1">클래스 선택자 테스트7</li>
-        <li class="test-2 aaa">클래스 선택자 테스트8</li>
+      <!-- 여러 클래스 적용 가능 -->
+      <li class="aaa test-1">클래스 선택자 테스트7</li>
+      <li class="test-2 aaa">클래스 선택자 테스트8</li>
 
-        <!-- 여러 클래스 작성 시 class 속성값 순서는 의미 없음
+      <!-- 여러 클래스 작성 시 class 속성값 순서는 의미 없음
              -> style 태그 css코드 작성 순서에 따라 다름 
             -->
-        <li class="test-1 test-2 aaa">클래스 선택자 테스트9</li>
-        <li class="test-2 test-1 aaa">클래스 선택자 테스트10</li>
+      <li class="test-1 test-2 aaa">클래스 선택자 테스트9</li>
+      <li class="test-2 test-1 aaa">클래스 선택자 테스트10</li>
     </ul>
-    
-    <hr>
+
+    <hr />
 
     <h3>모든 요소 선택자(*)</h3>
     <pre>
     (단독 또는 다른 선택자와 함꼐 사용가능한 선택자로)
     모든 요소를 선택하는 선택자
     </pre>
-
-
-
-
-
-
-
-</body>
-</html> 
+  </body>
+</html>

@@ -80,3 +80,8 @@
 #family-test2 > li:nth-child(3) {
   font-family: "양진체";
 }
+
+/* 메인 글꼴 적용은 */
+/* * {
+  font-family: "galmuri11";
+} */

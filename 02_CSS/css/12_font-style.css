@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+#size-test > li:nth-child(1) {
+  font-size: 24px;
+}
+#size-test > li:nth-child(2) {
+  font-size: 18pt;
+}
+#size-test > li:nth-child(3) {
+  font-size: 150%;
+}
+#size-test > li:nth-child(4) {
+  font-size: 1.5em;
+}
+/* 크롬브라우저 기준
+    기본 글꼴 크기 : 16px
+ */
+
+/* font-weight */
+#weight-test > li {
+  font-size: 34px;
+}
+
+#weight-test > li:nth-child(1) {
+  font-weight: 600;
+}
+#weight-test > li:nth-child(2) {
+  font-weight: bold;
+}
+#weight-test > li:nth-child(3) {
+  font-weight: bolder;
+}
+#weight-test > li:nth-child(4) {
+  font-weight: lighter;
+}
+#weight-test > li:nth-child(5) {
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* font-family */
+
+.cls > li {
+  font-size: 24px;
+}
+
+#family-test1 > li:nth-child(1) {
+  font-family: "궁서체";
+}
+#family-test1 > li:nth-child(2) {
+  font-family: "배달의민족체";
+}
+/* 없는 폰트인 경우 기본폰트로 설정됨 */
+
+#family-test1 > li:nth-child(3) {
+  font-family: "배달의민족체", "나눔고딕";
+}
+
+/* 웹 폰트 */
+/* 1. link 태그를 이용한 방법 -> html 파일 */
+
+#family-test2 > li:nth-child(1) {
+  font-family: "Single Day", cursive;
+}
+
+/* 2. @import는 css 파일 제일 상단 */
+#family-test2 > li:nth-child(2) {
+  font-family: "Black Han Sans", sans-serif;
+}
+
+/* 3. @font-face 이용 */
+@font-face {
+  font-family: "양진체";
+  src: url("https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#family-test2 > li:nth-child(3) {
+  font-family: "양진체";
+}

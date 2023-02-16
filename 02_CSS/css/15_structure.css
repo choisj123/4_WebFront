@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+div {
+  border: 1px solid black;
+}
+
+body {
+  margin: 0;
+  /* body 태그가 가지고 있는 기본 margin 제거 */
+}
+
+.container {
+  width: 1140px;
+  /* 가운데 정렬 */
+  margin: auto;
+}
+
+/* ------------------------------ */
+/* header */
+.header {
+  display: flex;
+  height: 80px;
+  background-color: #24292f;
+  color: white;
+}
+/* header 영역 비율 */
+/* 10 50 25 15   */
+/* 로고 div */
+.header > div:nth-of-type(1) {
+  flex-basis: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* 로고 */
+#home-logo {
+  color: white;
+}
+/* header 메뉴 div */
+.header > div:nth-of-type(2) {
+  flex-basis: 50%;
+  color: white;
+}
+
+.header ul {
+  list-style: none;
+
+  display: flex;
+}
+
+.header li {
+  flex: 0 0 100px;
+}
+
+/* 검색 div */
+.header > div:nth-of-type(3) {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-area {
+  width: 200px;
+}
+
+.search-area fieldset {
+  width: 240px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  border: 2px solid rgb(87, 96, 106);
+  border-radius: 6px;
+
+  display: flex;
+}
+
+/* 실제 input 검색창 */
+#query {
+  width: 90%;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 400;
+
+  background-color: transparent;
+  border: none;
+
+  outline: none;
+}
+/* signin signup div */
+.header > div:nth-of-type(4) {
+  flex-basis: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header > div > span {
+  padding: 0 8px;
+}
+/* sign in */
+.header > div:nth-of-type(4) > a:nth-of-type(1) {
+  color: white;
+}
+/* sign up */
+.header > div:nth-of-type(4) > a:nth-of-type(2) {
+  border: 1px solid white;
+  padding: 5px;
+  color: white;
+}
+
+/* ------------------------------ */
+.nev {
+  background-color: white;
+
+  display: flex;
+}
+
+.nav > div {
+  display: flex;
+}
+.nav > ul > a {
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  color: rgb(36, 41, 47);
+}
+.nav > ul {
+  list-style: none;
+
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.nav li {
+  flex: 0 1 250px;
+}
+.nav li > a {
+  display: block;
+  height: 100%;
+
+  text-align: center;
+
+  line-height: 24px;
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(36, 41, 47);
+
+  transition-duration: 0.5;
+}
+
+.nav li > a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+/* ------------------------------ */
+.content {
+  display: flex;
+  height: 1440px;
+}
+/* ------------------------------ */
+.footer-nav {
+  display: flex;
+}

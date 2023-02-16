@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/14_structure.css" />
+    <script
+      src="https://kit.fontawesome.com/95037d1905.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>웹 문서 구조</title>
+  </head>
+  <body>
+    <!-- 전체 컨테이너 영역 -->
+    <div class="container">
+      <!-- 헤더 영역 시작-->
+      <div class="header">
+        <!-- 로고 영역(클릭 시 메인페이지로 이동) -->
+        <div>
+          <a href="#">
+            <img src="src/로고.png" id="home-logo" />
+          </a>
+        </div>
+
+        <div>
+          <!-- 검색창 -->
+          <div class="search-area">
+            <!-- form 내부 input 태그 값을 서버 또는 페이지로 전달 -->
+            <form action="#" name="search-form">
+              <!-- fieldset : form 내부에서 input을 종류별로 묶는 용도로 많이 사용 -->
+              <fieldset>
+                <!-- autocomplete="off" : HTML 기본 자동완성 사용X -->
+                <input
+                  type="search"
+                  id="query"
+                  name="query"
+                  width="30px"
+                  autocomplete="off"
+                  placeholder="검색어를 입력해주세요...."
+                />
+                <!-- 검색버튼 -->
+                <button id="search-btn" class="fa-solid fa-magnifying-glass">
+                  <!-- fontawesome -->
+                  <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                </button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <!-- 로그인 회원가입 -->
+        <div>
+          <a href="#">로그인</a>
+          <span>|</span>
+          <a href="#">회원가입</a>
+        </div>
+      </div>
+      <!-- 헤더 영역 끝-->
+
+      <!-- nav 영역 시작 -->
+      <div class="nav">
+        <ul>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">전체글</a></li>
+          <li><a href="#">인기글</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">마이페이지</a></li>
+        </ul>
+      </div>
+      <!-- nav 영역 끝 -->
+
+      <!-- content 영역 시작 -->
+      <div class="content">
+        <!-- 왼쪽(메인) 콘텐츠 영역 -->
+        <div class="content-1"></div>
+        <!-- 로그인 영역(아이디/비밀번호) -->
+        <div class="content-2">
+          <form action="#" name="login-form">
+            <fieldset id="id-pw-area">
+              <!-- 아이디/비밀번호 input -->
+              <div>
+                <input type="text" name="inputId" placeholder="아이디" />
+                <input type="password" name="inputPw" placeholder="비밀번호" />
+              </div>
+              <!-- 로그인 버튼 (button의 type 기본값은 submit)-->
+              <div>
+                <button>로그인</button>
+              </div>
+            </fieldset>
+            <!-- 회원가입 / id/pw 찾기 영역 -->
+            <div id="signup-find-area">
+              <a>회원가입</a>
+              <span> | </span>
+              <a>ID/PW 찾기</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- content 영역 끝 -->
+    </div>
+    <!-- 전체 컨테이너 영역 끝-->
+
+    <!-- footer 영역 시작 -->
+    <div class="footer">
+      <p>Copyright &copy; Villege Hall Community</p>
+
+      <div>
+        <a href="#">프로젝트 소개</a>
+        <span>|</span>
+        <a href="#">이용약관</a>
+        <span>|</span>
+        <a href="#">개인정보방침</a>
+        <span>|</span>
+        <a href="#">FAQ</a>
+      </div>
+    </div>
+    <!-- footer 영역 끝 -->
+  </body>
+</html>

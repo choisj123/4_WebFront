@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  border: 2px solid black;
+}
+
+.header {
+  height: 10vh;
+  border: 1px solid black;
+}
+
+.nav {
+  height: 5vh;
+  border: 1px solid black;
+}
+
+.main {
+  border: 1px solid red;
+  display: flex;
+  padding: 20px;
+}
+.main div {
+  border: 1px solid blue;
+  height: 20vh;
+  width: 50%;
+}
+
+.footer {
+  height: 10vh;
+}
+
+section {
+  display: flex;
+}
+
+.section {
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  border: 1px solid green;
+}
+
+.section div {
+  height: 10vh;
+  border: 1px solid hotpink;
+}
+
+.figure {
+  height: 20vh;
+}
+
+.img {
+  height: 10vh;
+  border: 1px solid hotpink;
+}
+.figcaption {
+  height: 10vh;
+  border: 1px solid hotpink;
+}

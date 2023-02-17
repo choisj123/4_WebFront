@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
 
 #size-test > li:nth-child(1) {
-  font-size: 24px;
+  font-size: 30px;
 }
 #size-test > li:nth-child(2) {
   font-size: 18pt;
 }
 #size-test > li:nth-child(3) {
-  font-size: 150%;
+  font-size: 100%;
 }
 #size-test > li:nth-child(4) {
-  font-size: 1.5em;
+  font-size: 3em;
 }
 /* 크롬브라우저 기준
     기본 글꼴 크기 : 16px
@@ -22,7 +22,7 @@
 }
 
 #weight-test > li:nth-child(1) {
-  font-weight: 600;
+  font-weight: 200;
 }
 #weight-test > li:nth-child(2) {
   font-weight: bold;
@@ -54,6 +54,12 @@
 
 #family-test1 > li:nth-child(3) {
   font-family: "배달의민족체", "나눔고딕";
+}
+#family-test1 > li:nth-child(4) {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#family-test1 > li:nth-child(5) {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* 웹 폰트 */

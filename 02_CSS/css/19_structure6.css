@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* 지울 거 (확인용) */
+div {
+  border: 1px solid black;
+}
+
+main {
+  width: 1140px;
+  margin: auto;
+}
+
+header {
+  height: 200px;
+  display: flex;
+}
+
+header > section:nth-of-type(1) {
+  flex-basis: 15%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#home-logo {
+  width: 100px;
+  height: auto;
+}
+
+header > section:nth-of-type(2) {
+  flex-basis: 70%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.search-area {
+  width: 500px;
+}
+
+.search-area > fieldset {
+  padding: 2px;
+  margin: 0;
+  border: 2px solid black;
+  border-radius: 5px;
+
+  display: flex;
+}
+
+#query {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+
+  border: none;
+  outline: 0;
+  width: 90%;
+}
+
+#search-btn {
+  width: 8%;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: black;
+  background-color: transparent;
+  border: 0;
+}
+
+header > section:nth-of-type(3) {
+  flex-basis: 15%;
+}

@@ -24,7 +24,7 @@
   /* 행 방향(가로, 기본값) */
   flex-direction: row;
 
-  /* 행 방향(가로 + 순서반대 */
+  /* 행 방향(가로 + 순서반대) */
   /* flex-direction: row-reverse; */
 
   /* 열 방향 (세로)*/
@@ -51,7 +51,7 @@
   */
 
   /* item을 여러줄로 배치 */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 
   /* item을 여러줄로 뒤에서부터 배치 */
   /* flex-wrap: wrap-reverse; */
@@ -85,20 +85,20 @@
 
   /* item 주위에 main axis 방향 양쪽으로 일정한 크기에 공간을 추가
   -> 양 끝은 조금, item 중간은 넓게 떨어져 있음 */
-  /* justify-content: space-around; */
+  justify-content: space-around;
   /* 네비바에 자주 사용 */
 
   /* item이 main axis내에서 동일한 간격을 가지게 됨 */
   /* justify-content: space-evenly; */
 
   /* space-evely에서 양끝을 flex-container에 붙게 함 */
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* 네비바에 자주 사용 */
 
   /*******************/
   /* align-items */
   /******************/
-  /* item들을 croo axis(반대축, 교차축) 방향으로 정렬하는 방법을 지정하는 속성 */
+  /* item들을 cross axis(반대축, 교차축) 방향으로 정렬하는 방법을 지정하는 속성 */
   /* item들의 너비 또는 높이를 cross axis 방향으로 늘려서 flex-container와 같은 크기를 가지도록 함 */
 
   /* 조건 : item에 cross axis 방향의 크기 지정 속성이 없어야 함 */

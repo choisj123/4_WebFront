@@ -2,7 +2,8 @@
 div {
   width: 200px;
   height: 200px;
-  background-color: brown !important;
+  background-color: brown;
+  /* !important; */
 }
 
 /* 4순위 */

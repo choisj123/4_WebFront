@@ -80,13 +80,14 @@
 /* line-height */
 #line-test > p:last-child {
   line-height: 30px;
+  font-size: 20px;
 }
 
 /* letter-spacing */
 #letter-test {
   font-size: 24px;
   font-weight: bold;
-  letter-spacing: -1.5px;
+  letter-spacing: 10px;
 }
 
 #letter-test2 {

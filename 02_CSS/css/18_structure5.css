@@ -1,0 +1,195 @@
+/* 
+* {
+  box-sizing: border-box;
+}
+
+div {
+  border: 1px solid black;
+}
+
+.container {
+  height: 1000px;
+
+  margin: 50px;
+
+  display: flex;
+}
+
+.left {
+  width: 20%;
+}
+
+.right {
+  width: 80%;
+}
+
+.right > div:nth-of-type(1) {
+  height: 10%;
+}
+
+.right > div:nth-of-type(2) {
+  height: 10%;
+}
+.right > div:nth-of-type(3) {
+  height: 80%;
+}
+
+.right > div:last-of-type {
+  background-color: orange;
+  display: flex;
+}
+
+.col-3 > div:first-child {
+  background-color: red;
+  width: 50%;
+  margin: 30px;
+
+  display: flex;
+}
+
+.yellow-box {
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-3 > div:last-child {
+  width: 50%;
+  margin: 30px;
+  border: none;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.blue-box {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 40px;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+}
+.green-box {
+  background-color: green;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* <!-- ---------------------------- -->
+<!-- 쌤 풀이 --> */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  border: 1px solid black;
+}
+
+/* *************************** */
+
+.container {
+  display: flex;
+  height: 1000px;
+}
+
+/* 왼쪽 */
+.container div:first-child {
+  flex-basis: 20%;
+}
+
+/* 오른쪽 */
+.container div:last-child {
+  flex-basis: 80%;
+}
+/* 오른쪽 클래스 이름 설정 */
+/* == rightBox */
+
+.rightBox {
+  /* 새로운 flex 부모가 되어야 함 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 헤더 네비 */
+.rightBox > div:nth-child(1),
+.rightBox > div:nth-child(2) {
+  flex-basis: 10%;
+}
+
+/* 콘텐츠(주황) */
+.rightBox > div:nth-child(3) {
+  background-color: orange;
+  flex-basis: 80%;
+  padding: 20px;
+}
+/* 오렌지박스 이름 설정 */
+/* == orangeBox */
+.orangeBox {
+  /* 새로운 flex 부모 되어야 함 */
+  display: flex;
+  padding: 20px;
+}
+
+/* 빨간/ 파초 박스 */
+.orangeBox > div:nth-child(1),
+.orangeBox > div:nth-child(2) {
+  flex-basis: 50%;
+}
+
+/* 빨간색 */
+.orangeBox > div:nth-child(1) {
+  background-color: red;
+}
+/* 클래스 이름 지정 */
+/* == redBox */
+
+.redBox {
+  /* 새로운 flex 부모 되어야 함 */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.redBox div:nth-child(1),
+.redBox div:nth-child(2),
+.redBox div:nth-child(3),
+.redBox div:nth-child(4) {
+  flex-basis: 50%;
+  background-color: yellow;
+  scale: 0.8;
+}
+
+/* 파/초 박스 */
+.orangeBox > div:nth-child(2) {
+  /* 새로운 flex 부모 되어야 함 */
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+/* 클래스 이름 지정 */
+/* == blueGreenBox */
+.blueGreenBox > div:nth-child(1) {
+  /* 파란 박스 */
+  background-color: blue;
+  flex-basis: 40%;
+  margin: 10px 0px 0px 20px;
+}
+
+.blueGreenBox > div:nth-child(2) {
+  /* 초록 박스 */
+  background-color: green;
+  flex-basis: 60%;
+  margin: 10px 0px 0px 20px;
+}

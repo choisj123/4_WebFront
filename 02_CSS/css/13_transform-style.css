@@ -41,13 +41,14 @@ img {
 /* 가로 방향 확대/축소 */
 .trans-x-scale-2d:hover {
   width: 100px;
-  transform: scaleX(2);
+  transform: scaleX(1);
   margin-left: 200px;
 }
+
 /* 세로 방향 확대/축소 */
 .trans-y-scale-2d:hover {
   width: 100px;
-  transform: scaleX(2);
+  transform: scaleX(1);
   margin: 100px 0;
 }
 

@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- 반응형 웹을 만들기 위한 설정(기계의 넓이를 인식) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>04_표 관련 태그</title>
 
     <!-- HTML 문서의 스타일(크기,모양,색상 등)을 지정하는 태그 -->
     <style>
-        .tb3 {
-            border: 2px solid black;
-            /* solid 실선 dashed 점선 */
-            border-collapse: collapse;
-        }
+      .tb3 {
+        border: 2px solid black;
+        /* solid 실선 dashed 점선 */
+        border-collapse: collapse;
+      }
 
-        .tb3 th{ 
-            border: 1px solid white;
-        }
+      .tb3 th {
+        border: 1px solid white;
+      }
 
-        .tb3 thead {
-            background-color: lightcoral;
-        }
+      .tb3 thead {
+        background-color: lightcoral;
+      }
 
-        .tb3 tbody {
-            border: 1px solid white;
-            background-color: bisque;
-        }
-        .tb3 tfoot {
-            background-color:steelblue;
-            color: white;
-        }
+      .tb3 tbody {
+        border: 1px solid white;
+        background-color: bisque;
+      }
+      .tb3 tfoot {
+        background-color: steelblue;
+        color: white;
+      }
     </style>
-
-</head>
-<body>
+  </head>
+  <body>
     <h1>04_표 관련 태그</h1>
 
     <pre>
@@ -61,54 +60,75 @@
 - Table Header의 약자로 컬럼명을 표시하는 용도의 태그
 - 기본 설정은 td와 같으나 추가적으로 굵은 글씨, <u>가운데 정렬</u>이 이루어진다.
     </pre>
-    
+
     <pre>
         <h3>🔅 caption 태그</h3>
 - Table의 제목이나 설명을 추가하는 태그
     </pre>
 
-    <hr>
+    <hr />
 
     <h2>Table</h2>
-    <caption>이 표는 예시입니다.</caption>
+    <caption>
+      이 표는 예시입니다.
+    </caption>
 
     <!-- boarder="1" : table, td 태그에 1px짜리 검정 테두리 추가 -->
     <table border="2">
-        <tr> <!-- 1행 -->
-            <th>브라우저</th> <!-- 1행 1열 -->
-            <th>제조사</th> <!-- 1행 2열 -->
-            <th>제조사 홈페이지</th> <!-- 1행 3열 -->
-        </tr>
+      <tr>
+        <!-- 1행 -->
+        <th>브라우저</th>
+        <!-- 1행 1열 -->
+        <th>제조사</th>
+        <!-- 1행 2열 -->
+        <th>제조사 홈페이지</th>
+        <!-- 1행 3열 -->
+      </tr>
 
-        <tr> <!-- 2행 -->
-            <td>크롬</td> <!-- 2행 1열-->
-            <td>Google</td> <!-- 2행 2열-->
-            <td>http://www.google.com</td> <!-- 2행 3열-->
-        </tr>
+      <tr>
+        <!-- 2행 -->
+        <td>크롬</td>
+        <!-- 2행 1열-->
+        <td>Google</td>
+        <!-- 2행 2열-->
+        <td>http://www.google.com</td>
+        <!-- 2행 3열-->
+      </tr>
 
-        <tr> <!-- 3행 -->
-            <td>엣지</td> <!-- 3행 1열-->
-            <td>마이크로소프트</td> <!-- 3행 2열-->
-            <td>http://www.microsoft.com</td> <!-- 3행 3열-->
-        </tr>
+      <tr>
+        <!-- 3행 -->
+        <td>엣지</td>
+        <!-- 3행 1열-->
+        <td>마이크로소프트</td>
+        <!-- 3행 2열-->
+        <td>http://www.microsoft.com</td>
+        <!-- 3행 3열-->
+      </tr>
 
-        <tr> <!-- 4행 -->
-            <td>파이어폭스</td> <!-- 4행 1열-->
-            <td>Mozilla</td> <!-- 4행 2열-->
-            <td>http://www.mozilla.org</td> <!-- 4행 3열-->
-        </tr>
+      <tr>
+        <!-- 4행 -->
+        <td>파이어폭스</td>
+        <!-- 4행 1열-->
+        <td>Mozilla</td>
+        <!-- 4행 2열-->
+        <td>http://www.mozilla.org</td>
+        <!-- 4행 3열-->
+      </tr>
 
-        <tr> <!-- 5행 -->
-            <td>웨일</td> <!-- 5행 1열-->
-            <td>Naver</td> <!-- 5행 2열-->
-            <td>http://www.naver.com</td> <!-- 5행 3열-->
-        </tr>
-
+      <tr>
+        <!-- 5행 -->
+        <td>웨일</td>
+        <!-- 5행 1열-->
+        <td>Naver</td>
+        <!-- 5행 2열-->
+        <td>http://www.naver.com</td>
+        <!-- 5행 3열-->
+      </tr>
     </table>
 
-    <br>
-    <hr>
-    <br>
+    <br />
+    <hr />
+    <br />
 
     <h2>행 병합(rowspan), 열 병합(colspan)</h2>
 
@@ -121,30 +141,30 @@
     <h3>회원 정보</h3>
 
     <table border="2">
-        <tr>
-            <th width="70px">이름</th>
-            <td width="210px"></td>
-            <th width="140px" height="140px" rowspan="2">사진</th>
-        </tr>
+      <tr>
+        <th width="70px">이름</th>
+        <td width="210px"></td>
+        <th width="140px" height="140px" rowspan="2">사진</th>
+      </tr>
 
-        <tr>
-            <th>연락처</th>
-            <td></td>
+      <tr>
+        <th>연락처</th>
+        <td></td>
+      </tr>
 
-        <tr>
-            <th height="35px">주소</th>
-            <td colspan="2"></td>
-        </tr>
+      <tr>
+        <th height="35px">주소</th>
+        <td colspan="2"></td>
+      </tr>
 
-        <tr>
-            <th height="140px">자기소개</th>
-            <td colspan="2"></td>
-        </tr>
-
+      <tr>
+        <th height="140px">자기소개</th>
+        <td colspan="2"></td>
+      </tr>
     </table>
-    
-    <br>
-    <hr>
+
+    <br />
+    <hr />
 
     <h2>테이블 구조 설정 태그</h2>
 
@@ -155,40 +175,38 @@ tfoot : 테이블의 하단 부분 영역 (합계)
     </pre>
 
     <table class="tb3">
-        <thead>
-            <tr>
-                <th>이름</th>
-                <th>나이</th>
-                <th>주소</th>
-            </tr>
-        </thead>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>나이</th>
+          <th>주소</th>
+        </tr>
+      </thead>
 
-        <tbody>
-            <tr>
-                <td>홍길동</td>
-                <td>20</td>
-                <td>서울시 구로구</td>
-            </tr>
-            <tr>
-                <td>최수진</td>
-                <td>26</td>
-                <td>경기도 평택시</td>
-            </tr>
-            <tr>
-                <td>문기혁</td>
-                <td>27</td>
-                <td>고양시 일산서구</td>
-            </tr>
-        </tbody>
+      <tbody>
+        <tr>
+          <td>홍길동</td>
+          <td>20</td>
+          <td>서울시 구로구</td>
+        </tr>
+        <tr>
+          <td>최수진</td>
+          <td>26</td>
+          <td>경기도 평택시</td>
+        </tr>
+        <tr>
+          <td>문기혁</td>
+          <td>27</td>
+          <td>고양시 일산서구</td>
+        </tr>
+      </tbody>
 
-        <tfoot>
-            <tr>
-                <th colspan="2">총인원</th>
-                <th>3명</th>
-            </tr>
-        </tfoot>
-
+      <tfoot>
+        <tr>
+          <th colspan="2">총인원</th>
+          <th>3명</th>
+        </tr>
+      </tfoot>
     </table>
-
-</body>
+  </body>
 </html>

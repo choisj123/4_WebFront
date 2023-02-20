@@ -10,32 +10,33 @@
       src="https://kit.fontawesome.com/95037d1905.js"
       crossorigin="anonymous"
     ></script>
-    <title>마을회관</title>
+
+    <link rel="stylesheet" href="../css/main-page.css" />
   </head>
   <body>
     <main>
       <header>
-        <!-- 클릭 시 메인페이지로 이동하는 로고 -->
+        <!-- 클릭시 메인으로 이동하는 로고 -->
         <section>
           <a href="#">
             <img src="/02_CSS/src/로고.png" id="home-logo" />
           </a>
         </section>
 
-        <!-- 검색 영역 -->
         <section>
           <article class="search-area">
+            <!-- form 내부 input 태그 값을 서버 또는 페이지로 전달 -->
             <form action="#" name="search-form">
-              <!-- 검색창 -->
               <fieldset>
                 <input
                   type="search"
                   id="query"
                   name="query"
                   autocomplete="off"
-                  placeholder="Search..."
+                  placeholder="검색어를 입력해주세요"
                 />
-                <!-- 검색 버튼 -->
+
+                <!-- 검색버튼 -->
                 <button
                   id="search-btn"
                   class="fa-solid fa-magnifying-glass"
@@ -45,8 +46,94 @@
           </article>
         </section>
 
-        <section></section>
+        <!-- 로그인 / 회원가입 -->
+        <section>
+          <div>
+            <!-- 자물쇠 아이콘 -->
+            <i></i>
+            <a href="#" class="login">로그인</a>
+          </div>
+
+          <a href="#" class="signup">회원가입</a>
+        </section>
       </header>
+
+      <!-- 태그 -->
+      <article class="hashtag">
+        <ul>
+          <li><a href="#"> #카페 </a></li>
+          <li><a href="#"> #맛집 </a></li>
+          <li><a href="#"> #날씨 </a></li>
+          <li><a href="#"> #공부 </a></li>
+        </ul>
+      </article>
+
+      <!-- 바디 부분 시작 -->
+      <section class="body" style="border: 1px solid black">
+        <section class="left-body">
+          <article>
+            <!-- 이미지 + 로그인 -->
+            <img src="#" />
+            <a href="#">로그인</a>
+          </article>
+          <!-- 네비 (메뉴바)-->
+          <nav>
+            <ul>
+              <li>
+                <a href="#">홈</a>
+              </li>
+              <li>
+                <a href="#">공지사항</a>
+              </li>
+              <li>
+                <a href="#">전체글</a>
+              </li>
+              <li>
+                <a href="#">인기글</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <!-- 메인 콘텐츠 -->
+        <section class="right-body">
+          <!-- 지도 부분 -->
+          <section></section>
+
+          <!-- 날짜 -->
+          <section></section>
+
+          <!-- 공지+인기글 -->
+          <section>
+            <!-- 공지사항 -->
+            <section></section>
+            <!-- 인기글 -->
+            <section></section>
+          </section>
+
+          <!-- 날씨 -->
+          <section></section>
+        </section>
+      </section>
     </main>
+
+    <!-- 푸터 -->
+
+    <footer>
+      <p>Copyright &copy; 2023. Villege Hall Community. All rights reserved</p>
+
+      <article>
+        <a href="#">프로젝트 소개</a>
+        <span>|</span>
+        <a href="#">이용약관</a>
+        <span>|</span>
+        <a href="#">개인정보처리방침</a>
+        <span>|</span>
+        <a href="#">고객센터</a>
+      </article>
+    </footer>
   </body>
 </html>

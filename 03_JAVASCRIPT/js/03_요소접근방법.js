@@ -45,7 +45,7 @@ function fnTest3(){
     for(let i = 0; i < arr.length; i++){
         const num = arr[i].innerText;
 
-        arr[i].style.backgroundColor = "rgb(100, " + num + ", 130)";
+        arr[i].style.backgroundColor = "rgb(150, " + num + ", 130)";
     }
 
 }
@@ -57,7 +57,7 @@ function fnTest4(){
     // input 요소 접근하기
     const input = document.getElementById("inputTest");
 
-    //input 관련 태그에 작성된 값을 나태는 속성 == value
+    //input 관련 태그에 작성된 값을 나타내는 속성 == value
     
     // input 요소에 작성된 값을 얻어와 alert 출력
     alert(input.value);

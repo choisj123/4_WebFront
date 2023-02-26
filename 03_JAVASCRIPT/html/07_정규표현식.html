@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>07_정규표현식</title>
 
-    <link rel="stylesheet" href="/css/07_정규표현식.css" />
+    <link rel="stylesheet" href="../css/07_정규표현식.css" />
   </head>
   <body>
     <h1>정규 표현식(Regular Expression)</h1>
@@ -22,12 +22,12 @@
     <ul>
       <li>
         <a href="https://regexper.com/" target="_blank"
-          >작성한 정규표현식을 그림으로 나타내주는 사이트</a
+          >작성한 정규표현식을 그림으로 나타내주는 사이트 -> 안씀</a
         >
       </li>
       <li>
         <a href="https://regexr.com/" target="_blank"
-          >정규표현식 테스트 사이트</a
+          >정규표현식 테스트 사이트 -> 제일 많이 씀</a
         >
       </li>
       <li>
@@ -43,20 +43,20 @@
 
     <h1>정규 표현식 객체 생성 및 확인하기</h1>
     <pre>
-        1. 정규표현식 객체 생성 방법
+1. 정규표현식 객체 생성 방법
 
-        1) const regExp = new RegExp("정규표현식");
-        2) const regExp = /정규표현식/;
-            -> 양쪽 '/' 기호 정규 표현식 리터럴 표기법
+  1) const regExp = new RegExp("정규표현식");
+  2) const regExp = /정규표현식/;
+    -> 양쪽 '/' 기호 정규 표현식 리터럴 표기법
 
 
-        2. 문자열 패턴 확인 메서드(함수)
-        1) regExp.test(문자열)
-            -> 문자열에 정규표현식과 일치하는 패턴이 있을 경우 true, 없으면 false
+2. 문자열 패턴 확인 메서드(함수)
+  1) regExp.test(문자열)
+    -> 문자열에 정규표현식과 일치하는 패턴이 있을 경우 true, 없으면 false
 
-        2) regExp.exec(문자열)
-            -> 문자열에 정규표현식과 일치하는 패턴이 있을 경우
-                처음 매칭되는 문자열을 반환, 없으면 null 반환
+  2) regExp.exec(문자열)
+    -> 문자열에 정규표현식과 일치하는 패턴이 있을 경우
+       처음 매칭되는 문자열을 반환, 없으면 null 반환
     </pre>
 
     <button id="check1">확인하기(콘솔)</button>
@@ -74,7 +74,7 @@
         ^(캐럿) : 문자열의 시작을 의미
         $(달러) : 문자열의 끝을 의미
 
-        \w (word, 단어) : 아무 글자(단, 띄어쓰기, 특수문자, 한글 X)
+        \w (word, 단어) : 아무 글자(단, 띄어쓰기, 특수문자, 한글 X) 영어만 됨!
         \d (digit, 숫자) : 아무 숫자(0~9 중 하나)
         \s (space, 공간) : 아무 공백 문자(띄어쓰기, 엔터, 탭 등)
 
@@ -85,7 +85,7 @@
         [a-z] : 모든 영어 소문자
         [A-Z] : 모든 영어 대문자
 
-        * 특수문자의 경우 각가을 입력하는 방법밖에 없음
+        * 특수문자의 경우 각각을 입력하는 방법밖에 없음
         단, 메타문자와 중복되는 특수문자는
         앞에 \(백슬래시)를 추가하여 탈출 문자(Escape)로 만들어 사용
 
@@ -119,6 +119,6 @@
     이름 : <input type="text" id="inputName" />
     <span id="result1" class="confirm">결과</span>
 
-    <script src="/js/07_정규표현식.js"></script>
+    <script src="../js/07_정규표현식.js"></script>
   </body>
 </html>

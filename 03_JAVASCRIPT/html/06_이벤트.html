@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>06_이벤트</title>
+
+    <style>
+      #div1 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        transition-duration: 0.5s;
+      }
+    </style>
   </head>
   <body>
     <h1>이벤트(Event)</h1>
@@ -36,14 +45,13 @@ ex) onclick, onkeyup, onchange, onsubmit, ... (on이벤트)
 on이벤트명="함수명()" 형태로 작성
     </pre>
 
-    <button onclick="fnTest1()">인라인 이벤트 모델 확인용 버튼</button>
+    <button onclick="fnTest1(this)">인라인 이벤트 모델 확인용 버튼</button>
 
     <hr />
 
     <h1>고전 이벤트 모델</h1>
     <pre>
-        요소가 가지고 있는 이벤트 속성(이벤트 리스너)에
-        이벤트 핸들러를 직접 연결하는 방법
+요소가 가지고 있는 이벤트 속성(이벤트 리스너)에 이벤트 핸들러를 직접 연결하는 방법
     </pre>
 
     <button id="btn1">고전 이벤트 모델 확인</button>
@@ -67,6 +75,6 @@ on이벤트명="함수명()" 형태로 작성
     <div id="div1"></div>
     <input type="text" id="input1" />
 
-    <script src="/js/06.이벤트.js"></script>
+    <script src="../js/06.이벤트.js"></script>
   </body>
 </html>

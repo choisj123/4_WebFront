@@ -7,7 +7,7 @@
     <title>01_JS 개요</title>
 
     <!-- external 방식 연결 -->
-    <script src="js/01_개요.js"></script>
+    <script src="/js/01_개요.js"></script>
 
     <style>
       #box {
@@ -58,12 +58,13 @@ ECMA(국제 표준화 기구) Script 표준을 따르는 대표적인 웹 기술
     <!-- 버튼이 클릭되었을 때 btnClick2()함수를 호출 -->
     <button type="button" onclick="btnClick2()">external 방식</button>
 
-    <!-- JS는 "" / '' 둘다 문자열 리터럴 표기법으로 인식굄 -->
+    <!-- JS는 "" / '' 둘다 문자열 리터럴 표기법으로 인식됨 -->
 
     <button type="button" onclick="alert('inline 버튼이 클릭되었습니다!')">
       inline 방식
     </button>
 
+    <!-- internal 방식 -->
     <script>
       function btnClick1() {
         alert("internal 버튼이 클릭되었습니다!");
@@ -77,7 +78,7 @@ ECMA(국제 표준화 기구) Script 표준을 따르는 대표적인 웹 기술
     <div id="box"></div>
 
     <button type="button" onclick="changeColor1()">red</button>
-    <button type="button" onclick="">yellow</button>
-    <button type="button" onclick="">pink</button>
+    <button type="button" onclick="changeColor2()">yellow</button>
+    <button type="button" onclick="changeColor3()">pink</button>
   </body>
 </html>

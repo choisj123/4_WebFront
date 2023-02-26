@@ -38,8 +38,6 @@ const t2 = document.getElementById("test2");
 function getInnerText1(){
     console.log(t2.innerText);
 
-
-
 }
 
 

@@ -4,7 +4,7 @@
 // js 파일은 <script> 태그 내부라고 생각하면 됨
 
 function btnClick2(){
-    alert("external 버튼이 클릭됨")
+    alert("external 버튼이 클릭됨");
 }
 
 function changeColor1(){
@@ -14,5 +14,10 @@ function changeColor1(){
 
 function changeColor2(){
 
-    document.getElementById("box")
+    document.getElementById("box").style.backgroundColor= "yellow";
+}
+
+function changeColor3(){
+
+    document.getElementById("box").style.backgroundColor="pink";
 }

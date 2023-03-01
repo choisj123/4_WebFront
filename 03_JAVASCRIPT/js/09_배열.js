@@ -4,7 +4,7 @@ document.getElementById("btn1").addEventListener("click", function () {
   const arr2 = new Array(3);
   const arr3 = [];
   const arr4 = ["사과", "딸기", "바나나"];
-// 깃 테스트
+
   console.log(arr1);
   console.log(arr2);
   console.log(arr3);
@@ -24,23 +24,25 @@ document.getElementById("btn1").addEventListener("click", function () {
   // for문으로 배열 요소 반복 접근하기
 
   // 1. 일반 for문 - 배열, 컬렉션
-  //   for (let i = 0; i < arr4.length; i++) {
-  //     console.log(arr4[i]);
-  //   }
+    console.log("1. 일반 for문")
+    for (let i = 0; i < arr4.length; i++) {
+      console.log(arr4[i]);
+    }
 
   // 2. 배열.forEach( function(item, index) { 반복수행 코드 } ) - 배열
   // - item : 현재 접근중인 요소
   // - index : 현재 인덱스
 
   // * 여러 요소를 얻어온 경우(HTMLCollection, NodeList)는 배열이 아니므로 forEach()문 쓸 수 없다
-  //   arr4.forEach(function (a, i) {
-  //     console.log(i + " : " + a);
-  //   });
+  console.log("2. 배열.forEach") 
+  arr4.forEach(function (a, i) {
+      console.log(i + " : " + a);
+    });
 
   // 3. for( item of 배열(또는 컬렉션) ) {} - 배열, 컬렉션
   //      (Symbol.iterator가 존재하는 객체에 사용 가능)
   // == Java 향상된 for문과 비슷하게 생김
-
+  console.log("3. for(item of 배열)")
   for (let item of arr4) {
     console.log(item);
   }
@@ -50,8 +52,8 @@ document.getElementById("btn1").addEventListener("click", function () {
   const list2 = document.querySelectorAll("#test > li"); // NodeList
   // ==> 배열 X / forEach문 X 향상된 for문 O
 
-  //   console.log(list1);
-  //   console.log(list2);
+    console.log(list1);
+    console.log(list2);
 
   let sum = 0;
   for (let item of list2) {
@@ -88,12 +90,14 @@ document.getElementById("btn2").addEventListener("click", function () {
 
   console.log(numArr.sort()); // 1, 10, 2, 3, 5
 
+  // 오름차순
   console.log(
     numArr.sort(function (a, b) {
       return a - b;
     })
   );
 
+  // 내림차순
   console.log(
     numArr.sort(function (a, b) {
       return b - a;

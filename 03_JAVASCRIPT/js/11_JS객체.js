@@ -24,7 +24,7 @@ document.getElementById("btn1").addEventListener("click", function(){
 
             // ** 객체 내부에서 this == 현재 객체 **
             console.log(this.pName);
-            console.log(this.branch);
+            console.log(this.brand);
             console.log(this.color);
             console.log(this.price);
 
@@ -33,7 +33,7 @@ document.getElementById("btn1").addEventListener("click", function(){
     console.log(product);
 
     // 객체 기능 호출하기
-    product.information()
+    product.information();
 
     //객체가 가지고 있는 값 출력하기
     const div1 = document.getElementById("div1");
@@ -61,7 +61,7 @@ document.getElementById("btn1").addEventListener("click", function(){
     // JS 객체에 없는 key에 값대입하기!
     product.capacity = "550ml";
     console.log(product)
-        div1.innerHTML += "product.capacity : " + product.capacity + "<br>";
+    div1.innerHTML += "product.capacity : " + product.capacity + "<br>";
     div1.innerHTML += "<hr>";
 
     // // 객체의 key 제거 방법
@@ -75,7 +75,7 @@ document.getElementById("btn1").addEventListener("click", function(){
 
     // for(let key in 객체명) : 매 바퀴마다 객체의 K를 하나씩 얻어와 key 변수에 저장
     for(let key in product){
-        div1.innerHTML += product[key] + "<br>";
+            div1.innerHTML += product[key] + "<br>";
     }
 })
 
@@ -128,7 +128,7 @@ function Student(grade, ban, name){
 
     // 기능
     this.introduce = function(){
-        return this.grade + "학년 " + this.ban + "반 " + this.name; 
+        return "안녕?? 나는 " + this.grade + "학년 " + this.ban + "반 " + this.name + "이야!"; 
     }
 } 
 
@@ -137,7 +137,9 @@ function Student(grade, ban, name){
 document.getElementById("btn3").addEventListener("click", function(){
     const std = new Student(5, 2, '최오이');
 
+    console.log("JS 객체")
     console.log(std); // JS 객체
+    console.log("JSON으로 변환")
     console.log(JSON.stringify(std)) // JS객체 -> JSON 변환
     // ** JSON 변환 시 객체의 기능은 포함하지 않는다!! **
     // -> JSON은 데이터 전달에 특화된 형태

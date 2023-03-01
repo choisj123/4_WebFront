@@ -17,7 +17,7 @@ function calc(btn) {
   // eval("")
   // -> 매개변수의 문자열을 JS 코드로 해셕/수행하는 함수
   // -> 속도가 느림 + 보안 이슈로 인해 사용 지양(사용하지말기 !!!XXXXX)
-  // result.innerText = eval(n1 + op n2); --> 사용 금지
+  // result.innerText = eval(n1 + op + n2); --> 사용 금지
 
   // 대신, new Function() 사용
 

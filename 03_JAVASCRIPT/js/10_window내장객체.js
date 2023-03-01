@@ -39,7 +39,7 @@ function currentTime(){
     let min = now.getMinutes();
     let sec = now.getSeconds();
 
-    // 얻어온 시간값이 10미만을 경우 앞에 0 추가
+    // 얻어온 시간값이 10미만일 경우 앞에 0 추가
     if(hour < 10) hour = "0" + hour;
     if(min < 10) min = "0" + min;
     if(sec < 10) sec = "0" + sec;
@@ -72,10 +72,13 @@ function currentDate(){
     let year = now.getFullYear();
     let month = now.getMonth() + 1;
     let date = now.getDate();
-    let day = now.getDay().toString();
-
+    
     if(month < 10) month = "0" + month;
     if(date < 10) date = "0" + date;
+    
+    let dayArr = ['일','월','화','수','목','금','토'];
+
+    let day = dayArr[now.getDay()];
 
     return year + "년 " + month + "월 " + date + "일 " + day + "요일";
 
@@ -109,6 +112,6 @@ openPopup3.addEventListener("click", function(){
 
 document.getElementById("sendChild").addEventListener("click", function(){
     const options = "width=300, height=300, top=50, left=700"; 
-    window.open("팝업.html", "popupWindow", options);
+    window.open("10_팝업.html", "popupWindow", options);
 
 })

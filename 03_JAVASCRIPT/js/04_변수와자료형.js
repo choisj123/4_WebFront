@@ -83,7 +83,7 @@ function typeTest(){
     // name : undefined / undefined
 
 
-    name = "홍길동"; // undefined -> 홍길동(string
+    name = "홍길동"; // undefined -> 홍길동(string)
     
     // typeof 변수명 : 해당 변수의 자료형을 반환하는 연산자
     typeBox.innerHTML += "<br><br>name : " + name + " / " + typeof name;
@@ -141,7 +141,7 @@ function typeTest(){
     // 1) 변수명 == 함수명
 
     const fnSum = function(n1, n2) { // 익명 함수
-        return n1, + n2;
+        return n1 + n2;
     }
 
     // 함수명만 작성하는 경우 => 함수에 작성된 코드 자체가 반환

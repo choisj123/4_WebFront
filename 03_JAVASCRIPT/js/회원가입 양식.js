@@ -1,6 +1,6 @@
 //아이디
 const userId = document.getElementById("userId");
-userId.addEventListener("keypress", function () {
+userId.addEventListener("input", function () {
   // - 아이디 (영문 소문자로 시작, 영어 대/소문자, 숫자, -, _로만 이루어진 6~14글자 사이 문자열
   const regEx = /^[a-z]+[a-zA-Z0-9-_]{6,14}$/g;
   
@@ -35,7 +35,7 @@ userPw.addEventListener("keyup", function () {
 
 // - 이름 (한글 2~5글자)
 const userName = document.getElementById("userName")
-userName.addEventListener("keyup", function () {
+userName.addEventListener("input", function () {
 
   const nameResult = document.getElementById("nameResult");
 
@@ -50,10 +50,8 @@ userName.addEventListener("keyup", function () {
 
 });
 
-// 회원가입 버튼 클릭시
-const register = document.getElementById("register");
-register.addEventListener("click", function(){
-
+function validate(){
+  
   // 성별
   const gender = document.getElementById("gender")
   gender.addEventListener("keyup", function(){
@@ -62,7 +60,7 @@ register.addEventListener("click", function(){
       alert("성별을 선택해주세요")
     }
   })
-
+  
   // 전화 번호
   const phone = document.getElementById("phone")
   phone.addEventListener("keyup", function () {
@@ -71,17 +69,26 @@ register.addEventListener("click", function(){
     if (!regEx.test(this.value)) {
       alert("전화번호의 형식이 올바르지 않습니다")
     }
-  });
+  
+  })
+}
+
+// 회원가입 버튼 클릭시
+const register = document.getElementById("register");
+register.addEventListener("click", function(){
+  
+  validate();
+});
 
 
-  // 이메일
-  const email = document.getElementById("email")
+
+// 이메일
+const email = document.getElementById("email")
   email.addEventListener("keyup", function () {
     const regEx = /@ .com$/;
   });
 
 
-})
 
 
 

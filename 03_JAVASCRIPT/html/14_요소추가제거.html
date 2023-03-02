@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>요소추가제거</title>
+
+    <style>
+      /* 한 줄 */
+      .row {
+        margin: 5px 0;
+        display: flex;
+        align-items: center;
+      }
+      /* input 요소 */
+      .in {
+        width: 100px;
+        margin-right: 5px;
+      }
+
+      /* x 버튼 */
+      .remove {
+        border: 1px solid black;
+        border-radius: 50%;
+
+        width: 18px;
+        height: 18px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        box-sizing: border-box;
+
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 첫 행은 인풋은 무조건 존재 -> X버튼 없어야 함(삭제 안됨) -->
+      <div class="row"><input type="number" class="in" /></div>
+
+      <!-- 두번째 행 이후부터는 삭제 가능 -->
+      <!-- 
+        <div class="row">
+        <input type="number" class="in" />
+        <span class="remove">&times;</span>
+      </div> 
+    --></div>
+
+    <button id="add">추가</button>
+    <button id="calc">계산</button>
+
+    <script src="/js/14_요소추가제거.js"></script>
+  </body>
+</html>

@@ -65,6 +65,11 @@ changeBtn.addEventListener("click", function(){
     },changeInput.value + "000")
 
         
+    document.getElementById("clearBtn").addEventListener("click", function(){
+        // 배경색 삭제
+
+        // 값 삭제
+    })
         
 
 })

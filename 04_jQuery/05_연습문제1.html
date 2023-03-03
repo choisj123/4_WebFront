@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05_연습문제1</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .box {
+        border: 1px solid black;
+        box-sizing: border-box;
+        width: 110px;
+        height: 110px;
+      }
+      .input {
+        width: 103px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 1줄 -->
+      <div class="row">
+        <div class="area">
+          <div class="box" id="box1"></div>
+          <input type="text" class="input" id="input1" />
+        </div>
+      </div>
+      <button type="button" id="btn1">색변경</button>
+      <hr />
+
+      <!-- 2줄 -->
+      <div class="row">
+        <div class="area">
+          <div class="box"></div>
+          <input type="text" class="input" />
+        </div>
+        <div class="area">
+          <div class="box"></div>
+          <input type="text" class="input" />
+        </div>
+        <div class="area">
+          <div class="box"></div>
+          <input type="text" class="input" />
+        </div>
+        <div class="area">
+          <div class="box"></div>
+          <input type="text" class="input" />
+        </div>
+        <div class="area">
+          <div class="box"></div>
+          <input type="text" class="input" />
+        </div>
+        <div class="area">
+          <div class="box"></div>
+          <input type="text" class="input" />
+        </div>
+      </div>
+      <button type="button" id="btn2">색변경</button>
+      <hr />
+
+      <!-- 3줄 -->
+      <div class="row">
+        <div class="area">
+          <div class="box"></div>
+          <input type="text" class="input" />
+        </div>
+        <div class="area">
+          <div class="box"></div>
+          <input type="text" class="input" />
+        </div>
+        <div class="area">
+          <div class="box"></div>
+          <input type="text" class="input" />
+        </div>
+        <div class="area">
+          <div class="box"></div>
+          <input type="text" class="input" />
+        </div>
+        <div class="area">
+          <div class="box"></div>
+          <input type="text" class="input" />
+        </div>
+        <div class="area">
+          <div class="box"></div>
+          <input type="text" class="input" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $("#btn1").on("click", function () {
+        $("#input1").on("input", function () {
+          let input = $("#input1").val();
+          $("#box1").css("backgroundColor", "input");
+        });
+      });
+    </script>
+  </body>
+</html>

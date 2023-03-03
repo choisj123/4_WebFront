@@ -16,18 +16,18 @@ document.getElementById("btn1").addEventListener("click", function(){
 
     // #test의 자식 노드를 모두 얻어와서 확인
     const testNodeList = document.getElementById("test").childNodes;
-    // console.log(testNodeList);
+    console.log(testNodeList);
 
     // 노드 탐색
     const li1 = document.getElementById("li1");
-    // console.log(li1.parentNode); // 부모 노드 탐색 (ul#test)
+    console.log(li1.parentNode); // 부모 노드 탐색 (ul#test)
 
     // #li의 부모 배경색을 orange로 변경
-    // li1.parentNode.style.backgroundColor = 'orange';
+    li1.parentNode.style.backgroundColor = 'orange';
 
     // #li1의 부모 노드의 마지막 부분에 "ABCD"라는 text node 추가
     // 요소.append(요소 또는 노드) : 마지막 자식으로 추가
-    // li1.parentNode.append("ABCD");
+    li1.parentNode.append("ABCD");
 
     const test = document.getElementById("test");
     // #test의 첫번째 자식노드 찾기

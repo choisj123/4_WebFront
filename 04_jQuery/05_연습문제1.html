@@ -38,6 +38,15 @@
         </div>
       </div>
       <button type="button" id="btn1">색변경</button>
+
+      <script>
+        $("#btn1").on("click", function () {
+          $("#input1").on("input", function () {
+            let input = $("#input1").val();
+            $("#box1").css("backgroundColor", "input");
+          });
+        });
+      </script>
       <hr />
 
       <!-- 2줄 -->
@@ -99,13 +108,6 @@
       </div>
     </div>
 
-    <script>
-      $("#btn1").on("click", function () {
-        $("#input1").on("input", function () {
-          let input = $("#input1").val();
-          $("#box1").css("backgroundColor", "input");
-        });
-      });
-    </script>
+    <script></script>
   </body>
 </html>

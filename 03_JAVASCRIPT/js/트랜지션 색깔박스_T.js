@@ -26,3 +26,59 @@ for (let item of area){
     item.style.display = "flex";
     item.style.flexDirection = "column";
 }
+
+// box 클래스 요소에 높이 150px, 아랫쪽 테두리 1px 실선 검정색
+for(let item of box){
+    item.style.height = "150px";
+    item.style.borderBottom = "1px solid black";
+}
+
+// box-color 클래스 요소의 테두리와 outline을 없애기
+for(let item of boxColor){
+    item.style.border = "none";
+    item.style.outline = "none;"
+}
+
+// box-color 클래스 요소의 입력된 값이 변했을 때
+// 위에 있는 box 클래스 요소의 배경색을 변경
+// + 입력된 input 요소 글씨색도 변경
+for(let i = 0; i < boxColor.length; i++){
+    // change : 포커스를 잃고나서 또는 엔터 입력 시
+              //작성된 값이 이전 값과 다른 경우
+    // blur : 포커스를 잃었을 때
+    boxColor[i].addEventListener("change", function(){
+        // console.log(this.value);
+
+        // box-color input 태그와 같은 인덱스 번째 box 요소 배경색 변경
+        box[i].style.backgroundColor = this.value; 
+        
+        //boxColor[i].style.color // 글자색 변경
+        this.style.color = this.value;
+    })
+}
+
+// transition-duration 변경 버튼 클릭 시
+// #input1에 작성된 값 만큼의 transition-duration을 모든 box 요소에 추가
+// + #print1 요소의 내용을 #input1에 작성된 값으로 변경
+// hint.  transition-duration에 세팅되는 값은 초단위(s)
+
+document.getElementById("btn1").addEventListener("click", function(){
+    const duration = document.getElementById("input1").value; // #input1 값
+    for(let item of box){
+        item.style.transitionDuration = duration + "s";
+    }
+
+    document.getElementById("print1").innerText = duration;
+})
+
+// #clearBtn 클릭 시
+// .box의 모든 배경색을 없애고
+// .box-color에 작성된 값도 없애기
+document.getElementById("clearBtn").addEventListener("click", function(){
+    for(let item of box){ //.box 배경색 삭제
+        item.style.backgroundColor = "";
+    }
+    for(let item of boxColor){
+        item.value = "";
+    }
+})

@@ -10,4 +10,17 @@ inputId.addEventListener("change", function(){
 
     // - 형식이 일치할 경우
     // 입력창의 배경색을 springgreen으로 변경
+    if(regEx.test(this.value)){
+        this.style.backgroundColor = "springgreen";
+        this.style.color = "black";
+    }else{
+    // - 형식이 일치하지 않을 경우
+    //   입력창의 배경색을 red, 글자색을 white로 변경
+        this.style.backgroundColor = "red";
+        this.style.color = "white";
+    }
 })
+
+// * 비밀번호 확인 : 키보드가 올라올 때
+
+// * 이름 : 값이 변화했을 때

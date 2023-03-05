@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>회원가입 양식</title>
     <style>
-      fieldset{
+      fieldset {
         width: 400px;
       }
     </style>
@@ -21,48 +21,65 @@
             <td>
               <input type="text" id="userId" />
             </td>
-            <td><button type="submit">중복확인</td>
+            <td><button type="submit">중복확인</button></td>
           </tr>
-          <tr><td></td></tr>
+          <tr>
+            <td></td>
+          </tr>
           <tr>
             <td>비밀번호</td>
             <td><input type="password" id="userPw" /></td>
             <td><span id="pwResult">결과</span></td>
           </tr>
-          <tr><td></td></tr>
+          <tr>
+            <td></td>
+          </tr>
           <tr>
             <td>비밀번호 확인</td>
             <td><input type="password" id="userPwCheck" /></td>
           </tr>
-          <tr><td></td></tr>
+          <tr>
+            <td></td>
+          </tr>
           <tr>
             <td>이름</td>
             <td><input type="text" id="userName" /></td>
             <td><span id="nameResult">결과</span></td>
           </tr>
-          <tr><td></td></tr>
           <tr>
-            <td>성별 </td>
-            <td>
-              <label>남</label><input type="radio" name="gender" value="M"/>
-              <label>여</label><input type="radio" name="gender" value="F"/> </td>
+            <td></td>
           </tr>
-          <tr><td></td></tr>
+          <tr>
+            <td>성별</td>
+            <td>
+              <label>남</label><input type="radio" name="gender" value="M" />
+              <label>여</label><input type="radio" name="gender" value="F" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
           <tr>
             <td>전화 번호</td>
             <td><input type="tel" id="phone" /></td>
           </tr>
-          <tr><td></td></tr>
+          <tr>
+            <td></td>
+          </tr>
           <tr>
             <td>이메일</td>
             <td><input type="email" id="email" /></td>
           </tr>
-          <tr><td></td></tr>
+          <tr>
+            <td></td>
+          </tr>
           <tr>
             <td></td>
             <td>
               <button type="reset" id="reset">초기화</button>
-              <button type="submit" id="register" onsubmit="validate()">회원가입</button>
+              <button type="submit" id="register" onsubmit="validate()">
+                회원가입
+              </button>
             </td>
           </tr>
         </table>
@@ -70,6 +87,6 @@
       </fieldset>
     </form>
 
-    <script src="../js/회원가입 양식.js"></script>
+    <script src="../js/회원가입양식.js"></script>
   </body>
 </html>

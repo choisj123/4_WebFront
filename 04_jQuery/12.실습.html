@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .box {
+        display: inline-block;
+      }
+      .area {
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        border: 1px solid black;
+      }
+      .inputColor {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="area"></div>
+      <input type="text" class="inputColor input" />
+    </div>
+    <div class="box">
+      <div class="area"></div>
+      <input type="text" class="inputColor input" />
+    </div>
+    <div class="box">
+      <div class="area"></div>
+      <input type="text" class="inputColor input" />
+    </div>
+    <div class="box">
+      <div class="area"></div>
+      <input type="text" class="inputColor input" />
+    </div>
+    <div class="box">
+      <div class="area"></div>
+      <input type="text" class="inputColor input" />
+    </div>
+    <div class="box">
+      <div class="area"></div>
+      <input type="text" class="inputColor input" />
+    </div>
+
+    <button type="button" id="reset">리셋</button>
+
+    <!-- 
+        input태그에 입력이라는 이벤트가 발생했을 때 이벤트가 발생한 input 
+        이전 요소의 배경색을 입력된 값으로 변경
+     -->
+    <!-- 
+        input 태그에 입력이라는 이벤트가 발생했을 때 이벤트가 발생한 요소의 
+        테두리 색을 입력된 값으로 변경
+      -->
+    <script>
+      $(".input").on("input", function () {
+        // 1) input 테두리 바꾸기
+        $(this).css("borderColor", $(this).val()).css("color", $(this).val());
+
+        // 2) input 이전 요소(box)의 배경색 바꾸기
+        $(this).prev().css("backgroundColor", $(this).val());
+      });
+
+      $("#reset").on("click", function () {
+        $(".input").val("").css("borderColor", "");
+        // css 설정 값이 없을 경우 초기 상태로 돌아감
+
+        $(".area").css("backgroundColor", "");
+
+        // input 태그 테두리 색 확인
+        // rgb(118, 118, 118)
+        console.log($(".input3").css("borderColor"));
+
+        // $(".box").remove();
+
+        // for (let i = 0; i < 6; i++) {
+        //   const box = $('<div class="box">');
+        //   const area = $('<div class="area">');
+        //   const input = $('<input type="text" class="inputColor input3">');
+        //   box.append(area);
+        //   box.append(input);
+
+        //   $("#reset").before(box);
+        // }
+      });
+    </script>
+  </body>
+</html>

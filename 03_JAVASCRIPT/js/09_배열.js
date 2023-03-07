@@ -50,7 +50,7 @@ document.getElementById("btn1").addEventListener("click", function () {
   // li 태그에 작성된 값 얻어와서 합 구하기
   const list1 = document.getElementsByTagName("li"); //HTMlCollection
   const list2 = document.querySelectorAll("#test > li"); // NodeList
-  // ==> 배열 X / forEach문 X 향상된 for문 O
+  // ==> forEach문 X / 향상된 for문 O
 
     console.log(list1);
     console.log(list2);

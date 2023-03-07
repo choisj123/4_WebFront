@@ -6,7 +6,7 @@ btn1.addEventListener("click", function () {
   console.log("parseInt('123') : " + parseInt("123"));
   console.log(typeof "123");
   console.log(typeof parseInt("123"));
-  console.log("parseInt('2.94') : " + parseInt("2.94"));
+  console.log("parseInt('3.14') : " + parseInt("3.14"));
   console.log("============================================");
 
   console.log("parseFloat('123') : " + parseFloat("123"));

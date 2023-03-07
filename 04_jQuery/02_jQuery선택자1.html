@@ -32,16 +32,15 @@
         // document.getElementsByTagName("p").style.backgroundColor = "yellow";
         // -> 배열에 스타일 적용할 수 없다
 
-        // const arr = document.getElementsByTagName("p");
+        const arr = document.getElementsByTagName("p");
         // console.log(arr);
 
-        // for (let el of arr) {
-        //   el.style.backgroundColor = "yellow";
-        // }
-
+        for (let el of arr) {
+          el.style.backgroundColor = "yellow";
+        }
         // -> 배열에서 요소를 하나씩 꺼내서 적용하는건 가능하나 불편하다!
 
-        $("h5", "p").css("backgroundColor", "blue");
+        $("h5, p").css("backgroundColor", "pink");
       });
     </script>
 

@@ -14,8 +14,8 @@ document.getElementById("btn1").onclick = function () {
 
   // 요소의 속성 중 on이벤트명 속성에 함수대신 null을 대입하여
   // 이벤트 삭제 (변수에 값을 새로 대입하여 덮어쓰기하는 원리)
-  document.getElementById("btn1").onclick = null;
 };
+document.getElementById("btn1").onclick = null;
 
 document.getElementById("btn1").onmouseover = function () {
   // 마우스가 요소 위로 올라왔을 때
@@ -25,6 +25,7 @@ document.getElementById("btn1").onmouseover = function () {
 document.getElementById("btn1").onmouseout = function () {
   // 마우스가 요소 밖으로 나갔을 때
   document.getElementById("btn1").style.backgroundColor = "yellow";
+  document.getElementById("btn1").style.color = "red";
 };
 
 // 고전 이벤트 모델 단점

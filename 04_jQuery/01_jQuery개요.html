@@ -92,11 +92,13 @@ jQuery의 ready() 함수 : HTML 문서 로딩이 완료된 후 수행할 기능�
 
       window.onload = function () {
         document.getElementById("test1").innerText = "HTML 해석 순서 테스트";
+        console.log(document.getElementById("test1").innerText);
       };
 
       window.onload = function () {
         console.log("마지막으로 작성된 onload");
       };
+      // window.onload() -> 한개만 작성 가능
     </script>
 
     <p id="test1"></p>

@@ -22,5 +22,14 @@ inputId.addEventListener("change", function(){
 })
 
 // * 비밀번호 확인 : 키보드가 올라올 때
+const inputPw = document.getElementById("inputPw");
+const inputPwCheck = document.getElementById("inputPwCheck");
+
+inputPwCheck.addEventListener("keyup", function(){
+    // 비빌번호를 미입력한 상태에서 "비밀번호 확인"을 작성할 경우
+    if(inputPw.value.trim().length == 0){
+        // 비밀번호 확인에 작성된 내용을 모두 삭제하고
+    }
+})
 
 // * 이름 : 값이 변화했을 때

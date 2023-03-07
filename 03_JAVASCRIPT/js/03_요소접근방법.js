@@ -21,7 +21,7 @@ function fnTest2(){
     // 요소 여러개를 한번에 접근하는 경우 배열 형태로 반환됨
     const arr = document.getElementsByClassName("div2")
 
-    // console.log(arr);
+    console.log("test: " +  arr);
 
     // console.log(arr[0]);
     // console.log(arr[1]);
@@ -45,7 +45,7 @@ function fnTest3(){
     for(let i = 0; i < arr.length; i++){
         const num = arr[i].innerText;
 
-        arr[i].style.backgroundColor = "rgb(150, " + num + ", 130)";
+        arr[i].style.backgroundColor = "rgb(50, " + num + ", 80)";
     }
 
 }
@@ -72,7 +72,7 @@ function fnTest5(){
     // name 속성값이 "hobby"인 요소를 모두 얻어와 배열 형식으로 반환
     const hobby = document.getElementsByName("hobby");
 
-    // console.log(hobby);
+    console.log(hobby);
 
     // 체크된 체크박스의 값을 누적할 변수 선언
     let str = ""; 

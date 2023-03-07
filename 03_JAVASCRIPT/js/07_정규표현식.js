@@ -34,6 +34,7 @@ document.getElementById("check1").addEventListener("click", function () {
   console.log("regEx2.exec(str3) : " + regEx2.exec(str3));
 
   console.log(regEx2.exec(str3));
+
 });
 
 // 메타문자 확인하기

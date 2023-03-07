@@ -51,6 +51,7 @@ console.log("var num1 중복 확인 : " + num1);
 // 자료형 확인 (+ 변수 선언 방법)
 function typeTest(){
 
+    console.log("---typeTest---");
     let temp1 = 100;
     // let temp1 = 200; // 변수명 중복 X
     // 블록 범위 변수 'temp1'을(를) 다시 선언할 수 없습니다.

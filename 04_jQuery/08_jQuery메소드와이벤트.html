@@ -57,19 +57,25 @@
 
 $(A).append(B) : A요소 내 뒷부분에 B를 추가(자식)
 $(A).prepend(B) : A요소 내 앞부분에 B를 추가(자식)
+
 $(A).after(B) : A요소 뒷부분에 B를 추가(형제)
 $(A).before(B) : A요소 앞부분에 B를 추가(형제)
 
 생성된 요소(B)를 매개변수로 지정한 선택자(A) 요소에 추가
 $(B).appendTo(A) : B를 A의 요소 내 뒷부분에 추가(자식)
 $(B).prependTo(A) : B를 A의 요소 내 앞부분에 추가(자식)
+
 $(B).insertAfter(A) : B를 A의 요소 뒤에 추가(형제)
 $(B).insertBefore(A) : B를 A의 요소 앞에 추가(형제)
 
     </pre>
 
+    <hr />
+
     <div id="area2">
-      <ul id="list2"></ul>
+      <ul id="list2">
+        리스트
+      </ul>
       <!--기준-->
     </div>
 
@@ -86,7 +92,7 @@ $(B).insertBefore(A) : B를 A의 요소 앞에 추가(형제)
         $("#list2").prepend("<li>리스트" + count++ + "</li>");
 
         for (let i = 0; i < 3; i++) {
-          const el = "<p>새로 추가된 요소 " + i + "</p>";
+          const el = "<p>!!!새로 추가된 요소 " + i + "</p>";
 
           $("#list2").before(el);
           $("#list2").after(el);
